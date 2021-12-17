@@ -24,11 +24,11 @@ $(() => {
     populaTabela()
 
     $("#btnSalvar").click(() => {
-
+        console.log("FUNÇAO CLICK FUNCIONOU")        
         let produto = {}
-        produto.nome = $("nmProduto").val()
-        produto.quantidade = $("quantidade").val()
-        produto.valor = $("vlrProduto").val()
+        produto.nome = $("#nmProduto").val()
+        produto.quantidade = $("#quantidade").val()
+        produto.valor = $("#vlrProduto").val()
 
         let listaProdutos = []
 
@@ -43,7 +43,7 @@ $(() => {
         alert("Produto salvo com sucesso")
 
         $("#nmProduto").val("")
-        $("#Quantidade").val("")
+        $("#quantidade").val("")
         $("#vlrProduto").val("")
 
         populaTabela()
